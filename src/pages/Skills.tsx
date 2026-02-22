@@ -47,7 +47,7 @@ export default function Skills() {
                 <CardContent className="space-y-6">
                     {category.skills.map((skill, sIndex) => (
                     <div key={sIndex} className="space-y-2">
-                        <div className="flex justify-between text-sm">
+                        <div className="text-sm">
                           <span className="font-medium text-slate-700">{skill}</span>
                         </div>
                         <div className="h-2 bg-slate-950 rounded-full"></div>
