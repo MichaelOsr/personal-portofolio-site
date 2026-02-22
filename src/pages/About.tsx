@@ -1,30 +1,30 @@
 import { Card, CardContent } from "../components/ui/card";
 import { Badge } from "../components/ui/badge";
-import { CheckCircle2, Code2, Lightbulb, Rocket } from "lucide-react";
+import { Code2, Lightbulb, Rocket } from "lucide-react";
 
 const skills = ["React", "TypeScript", "Tailwind CSS", "Node.js"];
 
 const values = [
   {
     title: "Clean Code",
-    description: "Menulis kode yang mudah dibaca, dipelihara, dan skalabel.",
+    description: "Writing clean, maintainable, and scalable code.",
     icon: <Code2 className="w-5 h-5 text-blue-600" />,
   },
   {
     title: "User Centric",
-    description: "Fokus pada pengalaman pengguna yang intuitif dan aksesibel.",
+    description: "Focusing on intuitive and accessible user experiences.",
     icon: <Lightbulb className="w-5 h-5 text-yellow-600" />,
   },
   {
     title: "Fast Delivery",
-    description: "Efisiensi dalam development tanpa mengorbankan kualitas.",
+    description: "Efficiency in development without compromising quality.",
     icon: <Rocket className="w-5 h-5 text-purple-600" />,
   },
 ];
 
 export default function About() {
   return (
-    <section id="about" className="py-24 bg-slate-50/50">
+    <section id="about" className="py-14 bg-slate-50/50">
         <div className="container mx-auto px-4">
             
             {/* Header Section */}
@@ -38,25 +38,22 @@ export default function About() {
             {/* Kolom Kiri: Brief Bio & Skills */}
             <div className="space-y-8">
                 <div className="space-y-4">
-                <h3 className="text-2xl font-semibold text-slate-800">Brief Bio</h3>
-                <p className="text-slate-600 leading-relaxed text-lg">
-                    Saya adalah seorang pengembang perangkat lunak yang bersemangat dengan pengalaman lebih dari 5 tahun dalam membangun solusi web. 
-                    Perjalanan saya dimulai dari rasa penasaran bagaimana internet bekerja, hingga kini fokus pada ekosistem **Modern JavaScript**.
-                </p>
-                <p className="text-slate-600 leading-relaxed">
-                    Saya percaya bahwa teknologi terbaik adalah teknologi yang mampu menyelesaikan masalah nyata dengan cara yang paling sederhana.
-                </p>
+                    <h3 className="text-2xl font-semibold text-slate-800">Brief Bio</h3>
+                    <p className="text-slate-600 leading-relaxed text-lg">
+                        Passionate Fullstack Web Developer dedicated to building scalable, user-centric applications. With a strong foundation in both frontend aesthetics and backend logic, I bridge the gap between complex problems and elegant digital solutions. I thrive on turning ideas into functional, high-performing reality.
+                    </p>
+
                 </div>
 
                 <div className="space-y-4">
-                <h3 className="text-xl font-semibold text-slate-800">Core Skills</h3>
-                <div className="flex flex-wrap gap-2">
-                    {skills.map((skill) => (
-                    <Badge key={skill} variant="outline" className="bg-white px-3 py-1 text-sm border-blue-100 text-blue-700">
-                        {skill}
-                    </Badge>
-                    ))}
-                </div>
+                    <h3 className="text-xl font-semibold text-slate-800">Core Skills</h3>
+                    <div className="flex flex-wrap gap-2">
+                        {skills.map((skill) => (
+                        <Badge key={skill} variant="outline" className="bg-white px-3 py-1 text-sm border-blue-100 text-blue-700">
+                            {skill}
+                        </Badge>
+                        ))}
+                    </div>
                 </div>
             </div>
 
