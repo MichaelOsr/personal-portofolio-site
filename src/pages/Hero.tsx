@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import profileImg from "@/assets/profil.png";
+import cv from "@/assets/cv.pdf";
 import { ArrowRight, Download } from "lucide-react"; // Menggunakan Lucide (bawaan Shadcn)
 
 export default function Hero() {
@@ -21,8 +22,8 @@ export default function Hero() {
           </Badge>
           
           <div className="space-y-2">
-            <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight text-gray-950">
-              Hi, I'm <span className="text-blue-700 underline decoration-blue-300">Michael Octavian</span>
+            <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-50">
+              Hi, I'm <span className="text-blue-500 underline decoration-blue-300">Michael Octavian</span>
             </h1>
             <h2 className="text-lg md:text-2xl font-semibold text-slate-50">
               Full-Stack Web Developer
@@ -36,13 +37,21 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            <Button size="lg">
+            <Button size="lg" asChild>
               <a href="#portofolio" className="flex items-center gap-2">
                 View My Work <ArrowRight className="w-4 h-4" />
               </a>
             </Button>
-            <Button size="lg" variant="outline" className="gap-2">
-              Download CV <Download className="w-4 h-4" />
+            <Button size="lg" variant="outline" className="gap-2" asChild>
+              <a 
+                href={cv} 
+                download="cv.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2"
+              >
+                Download CV <Download className="w-4 h-4" />
+              </a>
             </Button>
           </div>
         </div>

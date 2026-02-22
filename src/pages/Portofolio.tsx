@@ -15,8 +15,7 @@ const projects = [
       result: "Increased client reporting efficiency by 40% and reduced page load time by 60%."
     },
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800",
-    link: "#",
-    github: "#"
+    github: "https://github.com/MichaelOsr"
   },
   
 ];
@@ -72,12 +71,12 @@ export default function Portfolio() {
                     </div>
                   </CardContent>
 
-                  <CardFooter className="p-0 flex gap-4">
-                    <Button className="gap-2">
-                      <ExternalLink className="w-4 h-4" /> Live Demo
-                    </Button>
+                  <CardFooter className="p-0">
                     <Button variant="outline" className="gap-2">
-                      <Github className="w-4 h-4" /> Repository
+                      <Github className="w-4 h-4" /> 
+                      <a target="_blank" href={project.github}>
+                        Repository
+                      </a>
                     </Button>
                   </CardFooter>
                 </div>
