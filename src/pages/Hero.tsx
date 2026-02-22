@@ -1,17 +1,17 @@
-import { Button } from "./ui/button";
-import { Badge } from "./ui/badge";
+import { Button } from "../components/ui/button";
+import { Badge } from "../components/ui/badge";
 import { ArrowRight, Download } from "lucide-react"; // Menggunakan Lucide (bawaan Shadcn)
 
 export default function Hero() {
   return (
     <section 
       id="home" 
-      className="relative min-h-[90vh] flex items-center justify-center pt-20 overflow-hidden bg-gradient-to-r from-slate-700 to-slate-900"
+      className="relative min-h-[95vh] flex items-center justify-center pt-20 lg:pt-0 overflow-hidden bg-gradient-to-r from-slate-700 to-slate-900"
     >
       {/* Efek Background (Opsional untuk estetika) */}
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(45%_45%_at_50%_50%,rgba(59,130,246,0.05)_0%,rgba(255,255,255,0)_100%)]" />
 
-      <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
+      <div className="container mx-auto px-4 pb-10 grid lg:grid-cols-2 gap-12 items-center">
         
         {/* Konten Teks */}
         <div className="space-y-6 text-center lg:text-left animate-in fade-in slide-in-from-left-5 duration-1000">

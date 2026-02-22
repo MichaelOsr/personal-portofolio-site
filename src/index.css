@@ -130,7 +130,7 @@ html {
   
 /* Tambahkan padding-top pada section agar tidak tertutup navbar yang fixed */
 section {
-  scroll-margin-top: 5rem; 
+  scroll-margin-top: 4rem; 
 }
 
 body {

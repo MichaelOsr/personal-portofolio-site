@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react'; // Icon standar
-import { Button } from './ui/button';
+import { Button } from '../components/ui/button';
 
 
 const navLinks = [
   { name: 'Home', href: '#home' },
-  { name: 'About Me', href: '#aboutme' },
+  { name: 'About Me', href: '#about' },
   { name: 'Skills', href: '#skills' },
   { name: 'Portofolio', href: '#portofolio' },
   { name: 'Experience', href: '#experience' },
