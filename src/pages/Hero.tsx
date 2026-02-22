@@ -20,10 +20,10 @@ export default function Hero() {
           </Badge>
           
           <div className="space-y-2">
-            <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-gray-950">
+            <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight text-gray-950">
               Hi, I'm <span className="text-blue-700 underline decoration-blue-300">Michael Octavian</span>
             </h1>
-            <h2 className="text-2xl md:text-3xl font-semibold text-slate-50">
+            <h2 className="text-lg md:text-2xl font-semibold text-slate-50">
               Full-Stack Web Developer
             </h2>
           </div>
@@ -35,8 +35,10 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            <Button size="lg" className="gap-2">
-              View My Work <ArrowRight className="w-4 h-4" />
+            <Button size="lg">
+              <a href="#portofolio" className="flex items-center gap-2">
+                View My Work <ArrowRight className="w-4 h-4" />
+              </a>
             </Button>
             <Button size="lg" variant="outline" className="gap-2">
               Download CV <Download className="w-4 h-4" />
