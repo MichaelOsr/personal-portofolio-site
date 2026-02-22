@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import profileImg from "@/assets/profil.png";
 import { ArrowRight, Download } from "lucide-react"; // Menggunakan Lucide (bawaan Shadcn)
 
 export default function Hero() {
@@ -53,7 +54,7 @@ export default function Hero() {
           
           <div className="relative w-64 h-64 md:w-80 md:h-80 border-4 border-white shadow-2xl rounded-2xl overflow-hidden rotate-3 hover:rotate-0 transition-transform duration-500">
             <img 
-              src="src\assets\profil.png" 
+              src={profileImg}
               alt="Professional Portrait"
               className="w-full h-full object-cover"
             />
