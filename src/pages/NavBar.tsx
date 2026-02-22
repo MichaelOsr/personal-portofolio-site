@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react'; // Icon standar
-import { Button } from './ui/button';
+import { Button } from '../components/ui/button';
 
 
 const navLinks = [
   { name: 'Home', href: '#home' },
-  { name: 'About Me', href: '#aboutme' },
+  { name: 'About Me', href: '#about' },
   { name: 'Skills', href: '#skills' },
   { name: 'Portofolio', href: '#portofolio' },
   { name: 'Experience', href: '#experience' },
@@ -21,7 +21,7 @@ export default function Navbar() {
       <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
-          <div className="font-bold text-xl text-slate-50">Dukun.Coding</div>
+          <div className="font-bold text-xl text-slate-50 bg-blue-950 py-2 px-4 rounded-2xl">Dukun.Coding</div>
 
           {/* Desktop Menu */}
           <div className="hidden lg:flex space-x-8">
