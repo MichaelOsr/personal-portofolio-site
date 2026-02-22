@@ -24,7 +24,7 @@ const values = [
 
 export default function About() {
   return (
-    <section id="about" className="py-14 bg-slate-50/50">
+    <section id="about" className="min-h-[95vh] py-14 bg-slate-50/50">
         <div className="container mx-auto px-4">
             
             {/* Header Section */}
