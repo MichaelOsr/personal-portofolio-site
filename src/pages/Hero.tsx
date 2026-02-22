@@ -1,5 +1,5 @@
-import { Button } from "../components/ui/button";
-import { Badge } from "../components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Download } from "lucide-react"; // Menggunakan Lucide (bawaan Shadcn)
 
 export default function Hero() {

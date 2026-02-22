@@ -1,5 +1,5 @@
-import { Card, CardContent } from "../components/ui/card";
-import { Badge } from "../components/ui/badge";
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import { Code2, Lightbulb, Rocket } from "lucide-react";
 
 const skills = ["React", "TypeScript", "Tailwind CSS", "Node.js"];

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react'; // Icon standar
-import { Button } from '../components/ui/button';
+import { Button } from '@/components/ui/button';
 
 
 const navLinks = [
