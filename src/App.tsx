@@ -1,11 +1,12 @@
-import About from "./pages/About"
-import Contact from "./pages/Contact"
-import Experience from "./pages/Experience"
-import Hero from "./pages/Hero"
-import Navbar from "./pages/NavBar"
-import Portfolio from "./pages/Portofolio"
-import Skills from "./pages/Skills"
-import Testimonials from "./pages/Testimonials"
+import About from "./sections/About"
+import Contact from "./sections/Contact"
+import Experience from "./sections/Experience"
+import Footer from "./sections/Footer"
+import Hero from "./sections/Hero"
+import Navbar from "./sections/NavBar"
+import Portfolio from "./sections/Portofolio"
+import Skills from "./sections/Skills"
+import Testimonials from "./sections/Testimonials"
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Experience />
       <Testimonials />
       <Contact />
+      <Footer />
     </div>
   )
 }

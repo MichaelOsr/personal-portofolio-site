@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader } from "../components/ui/card";
-import { Avatar, AvatarFallback, AvatarImage } from "../components/ui/avatar";
+import { Avatar, AvatarFallback } from "../components/ui/avatar";
 import { Quote } from "lucide-react";
 
 const testimonials = [
@@ -7,21 +7,18 @@ const testimonials = [
     name: "Sarah Johnson",
     role: "CEO at TechStart",
     quote: "Working with this developer was a game-changer for our platform. The attention to detail in the full-stack implementation exceeded our expectations, especially the performance optimization.",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=150",
     initials: "SJ"
   },
   {
     name: "Michael Chen",
     role: "Project Manager",
     quote: "A highly professional developer who understands both the technical and business sides of a project. The delivery was on time and the code quality is top-notch. Highly recommended!",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=150",
     initials: "MC"
   },
   {
     name: "Emily Davis",
     role: "Freelance Client",
     quote: "The result was exactly what I was looking for. The communication was excellent throughout the development process, and the final impact on my site's user engagement was immediate.",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=150",
     initials: "ED"
   }
 ];
@@ -54,7 +51,6 @@ export default function Testimonials() {
                 
                 <div className="flex items-center gap-4 pt-4 border-t border-slate-100">
                   <Avatar>
-                    <AvatarImage src={item.image} alt={item.name} />
                     <AvatarFallback>{item.initials}</AvatarFallback>
                   </Avatar>
                   <div>
