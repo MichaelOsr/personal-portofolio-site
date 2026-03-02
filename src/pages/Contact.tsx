@@ -40,14 +40,18 @@ export default function Contact() {
               </a>
 
               <div className="flex gap-4">
-                <a href="https://github.com/MichaelOsr" target="_blank" className="flex-1 flex items-center justify-center gap-2 p-4 rounded-xl bg-slate-50 hover:bg-slate-100 transition-colors">
-                  <Github className="w-5 h-5" />
-                  <span className="font-medium">GitHub</span>
-                </a>
-                <a href="https://www.linkedin.com/in/michael-octavian-satria-raharja-82a09616a/" target="_blank" className="flex-1 flex items-center justify-center gap-2 p-4 rounded-xl bg-blue-600 text-white hover:bg-blue-700 transition-colors">
-                  <Linkedin className="w-5 h-5" />
-                  <span className="font-medium">LinkedIn</span>
-                </a>
+                <Button asChild className="flex-1 flex items-center justify-center p-8 rounded-xl bg-slate-950 hover:bg-slate-900 transition-colors">
+                  <a href="https://github.com/MichaelOsr" target="_blank">
+                      <Github className="w-5 h-5" />
+                      <span className="font-medium">GitHub</span>
+                  </a>
+                </Button>
+                <Button asChild className="flex-1 flex items-center justify-center p-8 rounded-xl bg-blue-600 text-white hover:bg-blue-700 transition-colors">
+                  <a href="https://www.linkedin.com/in/michael-octavian-satria-raharja-82a09616a/" target="_blank">
+                    <Linkedin className="w-5 h-5" />
+                    <span className="font-medium">LinkedIn</span>
+                  </a>
+                </Button>
               </div>
             </div>
           </div>

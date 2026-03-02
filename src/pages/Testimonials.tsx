@@ -58,7 +58,7 @@ export default function Testimonials() {
                     <AvatarFallback>{item.initials}</AvatarFallback>
                   </Avatar>
                   <div>
-                    <h4 className="font-bold text-slate-900 text-sm">{item.name}</h4>
+                    <h2 className="font-bold text-slate-900 text-sm">{item.name}</h2>
                     <p className="text-xs text-slate-500">{item.role}</p>
                   </div>
                 </div>

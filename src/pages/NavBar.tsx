@@ -29,7 +29,7 @@ export default function Navbar() {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-slate-50 hover:text-black transition-colors"
+                className="text-slate-50 hover:text-slate-400 transition-colors"
               >
                 {link.name}
               </a>

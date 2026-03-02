@@ -37,18 +37,17 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            <Button size="lg" asChild>
-              <a href="#portofolio" className="flex items-center gap-2">
+            <Button size="lg" asChild className="flex items-center gap-2">
+              <a href="#portofolio">
                 View My Work <ArrowRight className="w-4 h-4" />
               </a>
             </Button>
-            <Button size="lg" variant="outline" className="gap-2" asChild>
+            <Button size="lg" variant="outline" className="flex items-center gap-2" asChild>
               <a 
                 href={cv} 
                 download="cv.pdf" 
                 target="_blank" 
-                rel="noopener noreferrer"
-                className="flex items-center gap-2"
+                rel="noopener noreferrer"                
               >
                 Download CV <Download className="w-4 h-4" />
               </a>
